@@ -1,6 +1,6 @@
 {
   "name": "http2-pusher",
-  "description": "A mechanism to organize HTTP/2 server push.",
+  "description": "A mechanism to execute HTTP/2 server push in an organized approach.",
   "version": "0.0.1",
   "author": {
     "name": "Adam Henson",

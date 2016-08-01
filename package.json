@@ -1,7 +1,7 @@
 {
   "name": "http2-pusher",
   "description": "A mechanism to organize HTTP/2 server push.",
-  "version": "2.0.9",
+  "version": "0.0.1",
   "author": {
     "name": "Adam Henson",
     "email": "adamhenson1979@gmail.com"

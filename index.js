@@ -99,10 +99,14 @@ class Http2Pusher {
     let groups = {};
     
     config.groups.forEach((group) => {
+      let trimmedPath = (group.path.indexOf('/*') > -1)
+        ? group.path.split('/*')[0]
+        : null;
+
       if(path === group.path) {
         groups.matched = group;
-      } else if(group.path.indexOf('*') > -1 && group.path.indexOf(path) > -1) {
-        if(groups.patternMatched && (group.path.length > groups.patternMatched)) {
+      } else if(!!trimmedPath && path.indexOf(trimmedPath) > -1) {
+        if(!groups.patternMatched || group.path.length > groups.patternMatched) {
           groups.patternMatched = group;
         }
       }

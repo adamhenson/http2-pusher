@@ -105,7 +105,7 @@ class Http2Pusher {
 
       if(path === group.path) {
         groups.matched = group;
-      } else if(!!trimmedPath && path.indexOf(trimmedPath) > -1) {
+      } else if(!!trimmedPath && path.indexOf(trimmedPath) === 0) {
         if(!groups.patternMatched || group.path.length > groups.patternMatched) {
           groups.patternMatched = group;
         }

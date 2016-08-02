@@ -14,7 +14,7 @@ $ npm install http2-pusher --save
 ```
 
 ## Example Usage
-[See a rough example here](https://github.com/adamhenson/http2-demo/blob/express/server.js). It uses [the same router as Express uses](https://github.com/pillarjs/router).
+[See a rough example here](https://github.com/adamhenson/http2-demo/blob/express/server.js). It uses [the same router Express uses](https://github.com/pillarjs/router).
 
 ## Want More?
 Don't worry more documentation, testing and examples coming soon.

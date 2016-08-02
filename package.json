@@ -27,10 +27,8 @@
     "type": "git",
     "url": "https://github.com/adamhenson/http2-pusher.git"
   },
-  "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
     "coveralls": "^2.11.12",
     "istanbul": "^0.4.4"
   },

@@ -93,7 +93,7 @@ class Http2Pusher {
 
   static getFiles(path, config) {
     if(!config.groups || !Array.isArray(config.groups)) {
-      return [];
+      return null;
     }
 
     let groups = {};
@@ -106,7 +106,7 @@ class Http2Pusher {
       if(path === group.path) {
         groups.matched = group;
       } else if(!!trimmedPath && path.indexOf(trimmedPath) === 0) {
-        if(!groups.patternMatched || group.path.length > groups.patternMatched) {
+        if(!groups.patternMatched || (groups.patternMatched.path && group.path.length > groups.patternMatched.path.length)) {
           groups.patternMatched = group;
         }
       }

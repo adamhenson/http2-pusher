@@ -1,7 +1,7 @@
 {
   "name": "http2-pusher",
-  "description": "A mechanism to execute HTTP/2 server push in an organized approach.",
-  "version": "0.0.4",
+  "description": "A mechanism to execute HTTP/2 server push in an organized approacgvjuh.",
+  "version": "0.0.5",
   "author": {
     "name": "Adam Henson",
     "email": "adamhenson1979@gmail.com"
@@ -30,13 +30,11 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.12",
-    "istanbul": "^0.4.4"
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha ./test/*",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
-  },
-  "dependencies": {
-    "mocha": "^3.0.0"
   }
 }
